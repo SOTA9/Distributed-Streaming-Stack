@@ -1,7 +1,7 @@
 x-spark-common: &spark-common
   image: apache/spark:3.5.3
   volumes:
-    - ./jobs:/opt/spark/jobs           # OK
+    - ./jobs:/opt/spark/jobs
     - ./mnt/checkpoints:/mnt/spark-checkpoints
     - ./mnt/spark-state:/mnt/spark-state
   networks:
