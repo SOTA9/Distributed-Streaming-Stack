@@ -91,7 +91,7 @@ def produce_transaction(thread_id):
         try:
             producer.produce(
                 topic=TOPIC_NAME,
-                key=transaction['user_id'],
+                key=transaction['userId'],
                 value=json.dumps(transaction).encode('utf-8'),
                 on_delivery=delivery_report
             )
