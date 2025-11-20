@@ -4,6 +4,7 @@ x-spark-common: &spark-common
     - ./jobs:/opt/spark/jobs
     - ./mnt/checkpoints:/mnt/spark-checkpoints
     - ./mnt/spark-state:/mnt/spark-state
+    - ./ivy2_cache:/home/spark/.ivy2
   networks:
     - sotabinda
   environment:

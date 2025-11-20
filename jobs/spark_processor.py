@@ -1,5 +1,3 @@
-from sqlite3.dbapi2 import Timestamp
-
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import *
 from pyspark.sql.types import StructType, StructField, StringType, DoubleType, LongType
